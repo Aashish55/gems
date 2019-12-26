@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'profilepage.dart';
 
 class OTPPage extends StatefulWidget {
   OTPPage({Key key}) : super(key: key);
@@ -10,7 +11,6 @@ class _OTPPageState extends State<OTPPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
       body: SingleChildScrollView(
         child: Stack(
           children: <Widget>[
@@ -64,7 +64,6 @@ class _OTPPageState extends State<OTPPage> {
                     ),
                   ],
                 ),
-                
                 Image.asset(
                   'assets/logo.png',
                   height: 260.0,
@@ -120,8 +119,10 @@ class _OTPPageState extends State<OTPPage> {
                         mini: true,
                         backgroundColor: Color(0xff27ae60),
                         onPressed: () => {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (ctx) => OTPPage()))
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (ctx) => ProfilePage()))
                         },
                         child: Icon(
                           Icons.keyboard_arrow_right,

@@ -14,8 +14,6 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
-      //backgroundColor: Color(0xffF1FDF1),
       body: SingleChildScrollView(
         child: Stack(
           children: <Widget>[
