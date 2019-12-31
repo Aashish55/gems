@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gems/seats.dart';
 import 'package:gems/settings.dart';
 import 'otpPage.dart';
 
@@ -370,7 +371,7 @@ class _HistoryState extends State<History> {
         mini: false,
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (ctx) => Settings()));
+              context, MaterialPageRoute(builder: (ctx) => Seats()));
         },
         backgroundColor: Color(0xff27ae60),
         child: Icon(
